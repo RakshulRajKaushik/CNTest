@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch</title>
+	<style>
+		input{
+			display: none;
+		}
+		.toggle-box{
+			position: absolute;
+			width: 60px;
+			height: 35px;
+			left: 10px;
+			top:10px;
+			background-color: grey;
+			border-radius: 25px;
+		}
+		.toggle-box:before{
+			content: "";
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			left: 5px;
+			top: 5px; 
+			background-color: white;
+			border-radius: 50%;	
+		}
+		input:checked + .toggle-box{
+			background-color: #42c60c;
+		}
+		input:checked + .toggle-box:before{
+			left: 30px;
+		}
+	</style>
+</head>
+<body>
+		<label>
+	 		<input type="checkbox">
+	 		<span class="toggle-box"></span>
+	 	</label>
+</body>
+</html>
